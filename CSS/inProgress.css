@@ -1,0 +1,170 @@
+@import "colorScheme.css";
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Not supported in many versions of firefox as of 05.07.2021 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--orange-clothes);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: var(--lighter-skin);
+}
+
+/* Media query for our iframe */
+@media screen and (max-width: 270px) {
+    body {
+        background: rgb(23,13,138);
+        background: linear-gradient(275deg, rgba(23,13,138,1) 0%, rgba(68,70,233,1) 50%, rgba(145,179,250,0.8352474778974089) 100%);
+        background-size: 1000px 1000px;
+    }
+    .add-button {
+        margin: 2px 2px 2px 0;
+        float: right;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform .2s;
+        color: var(--orange-clothes);
+    }
+    .add-button::after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+    .add-button:hover {
+        transform: scale(1.2);
+    }
+    .card {
+        display: none;
+        background-color: var(--blue);
+        border: 3px solid var(--lighter-skin);
+        border-radius: 10px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        transition: transform .2s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .heading {
+        margin-bottom: 5px;
+        width: 216px;
+        border: 2px solid var(--lighter-skin);
+        border-radius: 10px;
+        background-color: var(--dark-blue);
+        color: var(--outside-white)
+    }
+    .additional-information {
+        margin-bottom: 5px;
+        width: 216px;
+        border: 2px solid var(--lighter-skin);
+        border-radius: 10px;
+        background-color: var(--dark-blue);
+        color: var(--outside-white);
+        height: 60px;
+    }
+    .due-date-input {
+        width: 216px;
+        border: 2px solid var(--lighter-skin);
+        border-radius: 10px;
+        background-color: var(--dark-blue);
+        color: var(--outside-white)
+    }
+    .okBtn {
+        margin-left: 85px;
+        border: 2px solid var(--lighter-skin);
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: var(--dark-blue);
+        color: var(--outside-white)
+    }
+    .okBtn:hover {
+        transform: scale(1.2);
+    }
+    #task-list {
+        list-style: none;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
+    #task-list li {
+        padding: 10px 10px 10px 10px;
+        border: 2px solid var(--lighter-skin);
+        border-radius: 10px;
+        background-color: var(--dark-blue);
+        transition: transform .2s;
+        margin-bottom: 10px;
+        color: var(--outside-white)
+    }
+    #task-list li:hover {
+        transform: scale(1.05);
+    }
+    .edit-button {
+        margin: 2px 2px 2px 0;
+        float: right;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .edit-button::after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+    .edit-button:hover {
+        transform: scale(1.2);
+    }
+    .slider {
+        margin-top: 9px;
+        -webkit-appearance: none;
+        width: 216px;
+        height: 15px;
+        border-radius: 5px;
+        background: var(--outside-white);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: var(--orange-clothes);
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: var(--orange-clothes);
+        cursor: pointer;
+    }
+    .percentage-done {
+        margin-top: -3px;
+        margin-left: 5px;
+        color: var(--outside-white);
+    }
+}

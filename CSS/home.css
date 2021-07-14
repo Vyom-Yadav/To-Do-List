@@ -1,0 +1,176 @@
+@import "colorScheme.css";
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    background-color: var(--medium-blue);
+}
+.nav-list {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkest-blue) ;
+    font-size: 20px;
+    position: fixed;
+    height: 8%;
+}
+.nav-list a {
+    color: var(--orange-clothes);
+    text-align: center;
+    padding: 16px 2px 0 2px;
+    text-decoration: none;
+}
+.nav-list a:hover {
+    padding: 16px 2px 16px 2px;
+    background-color: var(--outside-white);
+    border-bottom: 3px solid var(--orange-clothes);
+    border-radius: 12px;
+    transition: width 0.3s ease-in-out;
+}
+
+.background {
+    padding-top: 80px;
+    height: 650px;
+    width: 100%;
+    background: var(--darkest-blue);
+    overflow: visible;
+    border-bottom-right-radius: 20% 25%;
+    border-bottom-left-radius: 20% 25%;
+}
+.get-started {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: var(--medium-blue);
+    width: 150px;
+    height: 60px;
+    border-radius: 24px;
+    border: none;
+    color: var(--darkest-blue);
+    font-size: 20px;
+}
+.get-started:hover {
+    background-color: var(--little-darker-blue);
+    cursor: pointer;
+}
+.tag-line {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0 200px 90px 80px;
+    color: var(--darker-skin);
+}
+.brand-name {
+    color: white;
+ }
+.to-do-icon {
+    height: 618px;
+    width: 633px;
+    float: right;
+    margin: -70px 100px 20px 0;
+}
+
+.logo {
+    grid-column: 1/2;
+}
+
+.home {
+    padding: 16px 2px 16px 2px;
+    grid-column: 3/4;
+}
+
+.features {
+    padding: 16px 2px 16px 2px;
+    grid-column: 5/7;
+}
+
+.resources {
+    padding: 16px 2px 16px 2px;
+    grid-column: 8/10;
+}
+
+.log-in {
+    padding: 16px 2px 16px 2px;
+    grid-column: 20/22;
+}
+
+.sign-up {
+    padding: 16px 2px 16px 2px;
+    grid-column: 23/25;
+}
+.log-out {
+    padding: 16px 2px 16px 2px;
+    grid-column: 20/24;
+}
+
+.resources {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--medium-blue);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+.dropdown-content a {
+    color: var(--darkest-blue);
+    text-decoration: none;
+    display: block;
+}
+
+.resources:hover .dropdown-content {display: block;}
+
+.laptop-body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image-laptop {
+    height: 82%;
+    margin-right: -90px;
+}
+.to-do-tag-line {
+    font-size: 66px;
+    color: var(--orange-clothes);
+    padding: 150px 0px 0 0;
+}
+.creator {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.creator-img {
+    width: 65%;
+    padding: 40px 0 40px 40px;
+    transition: transform .2s;
+}
+.creator-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.meet-the-creator {
+    font-size: 40px;
+    color: var(--orange-clothes);
+    padding: 33px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--darkest-blue);
+    transition: transform .2s;
+    height: 30%;
+    margin-top: 83px;
+}
+.meet-the-creator:hover {
+    transform: scale(1.1);
+}
+.inverted-quotes {
+    font-family: 'Arizonia', cursive;
+    color: var(--popping);
+    font-size: 60px;
+}

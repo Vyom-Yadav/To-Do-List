@@ -1,0 +1,15 @@
+.wrapper {
+    padding: 70px;
+}
+.heading {
+    color: var(--orange-clothes);
+    background-color: var(--darkest-blue);
+    border-radius: 10px;
+}
+.outlink {
+    text-decoration: none;
+    color: var(--popping);
+}
+.outlink:hover {
+    color: black;
+}

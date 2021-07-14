@@ -1,0 +1,21 @@
+.tutorial-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 60px 60px 60px;
+    justify-content: space-evenly;
+}
+.gif {
+    padding-bottom: 20px;
+    height: 500px;
+    width: 80%;
+    border-radius: 30px;
+}
+.info {
+    padding-top: 60px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    width: 20%
+}
+.progress {
+    margin-left: -180px;
+}
