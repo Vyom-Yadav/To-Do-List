@@ -75,7 +75,7 @@
             anything if you need.
         </p>
     </div>
-    <h3 class="project">In case you were wondering where is this project situated, just head on to <a href="" class="outlink">here</a>
+    <h3 class="project">In case you were wondering where is this project situated, just head on to <a href="https://github.com/Vyom-Yadav/To-Do-List" class="outlink">here</a>
     </h3>
 </div>
 </body>
